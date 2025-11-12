@@ -92,12 +92,15 @@ public class LoginPanel extends JPanel {
 		panel_2.add(lblNewLabel_3);
 
 		JButton btnNewButton = new JButton("1");
+		btnNewButton.addActionListener(new LoginListener());
 		panel_2.add(btnNewButton);
 
 		JButton btnNewButton_1 = new JButton("2");
+		btnNewButton_1.addActionListener(new LoginListener());
 		panel_2.add(btnNewButton_1);
 
 		JButton btnNewButton_2 = new JButton("3");
+		btnNewButton_2.addActionListener(new LoginListener());
 		panel_2.add(btnNewButton_2);
 
 		ButtonGroup group = new ButtonGroup();

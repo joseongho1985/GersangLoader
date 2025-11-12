@@ -11,7 +11,7 @@ public class ClientFile {
 
 	private static String[] pathList;
 
-	public ClientFile() {
+	public ClientFile() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
 		File file = new File("client_list.txt");
@@ -32,43 +32,36 @@ public class ClientFile {
 		return pathList[i];
 	}
 
-	private void readPathList() {
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader("client_list.txt"));
-			String str;
-			for (int i = 0; i < 3; i++) {
-				str = reader.readLine();
-				pathList[i] = str;
-			}
-			reader.close();
-
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	private void readPathList() throws IOException {
+		BufferedReader reader = new BufferedReader(new FileReader("client_list.txt"));
+		String str;
+		for (int i = 0; i < 3; i++) {
+			str = reader.readLine();
+			pathList[i] = str;
 		}
+		reader.close();
+
 	}
 
-	public void setPath(String path, int i) {
+	public void setPath(String path, int i) throws IOException {
 		pathList[i] = path;
 		writePathList();
 	}
 
-	public void setPathList(String[] list) {
+	public void setPathList(String[] list) throws IOException {
 		pathList = list;
 		writePathList();
 	}
 
-	private void writePathList() {
+	private void writePathList() throws IOException {
 
-		try (BufferedWriter writer = new BufferedWriter(new FileWriter("client_list.txt"))) {
+		BufferedWriter writer = new BufferedWriter(new FileWriter("client_list.txt"));
 
-			for (int i = 0; i < 3; i++) {
-				writer.write(pathList[i]);
-				writer.newLine();
-			}
-		} catch (IOException ex) {
-			ex.printStackTrace();
+		for (int i = 0; i < 3; i++) {
+			writer.write(pathList[i]);
+			writer.newLine();
 		}
+		writer.close();
 	}
 
 }

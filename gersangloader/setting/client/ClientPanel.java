@@ -30,15 +30,15 @@ public class ClientPanel extends JPanel {
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lblNewLabel_1);
 
-		JLabel lblNewLabel_2 = new JLabel(new ClientFile().getNthPath(0));
+		JLabel lblNewLabel_2 = new JLabel(new ClientListener().getNthPath(0));
 		pathList.add(lblNewLabel_2);
 		panel.add(lblNewLabel_2);
 
-		JLabel lblNewLabel_4 = new JLabel(new ClientFile().getNthPath(1));
+		JLabel lblNewLabel_4 = new JLabel(new ClientListener().getNthPath(1));
 		pathList.add(lblNewLabel_4);
 		panel.add(lblNewLabel_4);
 
-		JLabel lblNewLabel_5 = new JLabel(new ClientFile().getNthPath(2));
+		JLabel lblNewLabel_5 = new JLabel(new ClientListener().getNthPath(2));
 		pathList.add(lblNewLabel_5);
 		panel.add(lblNewLabel_5);
 

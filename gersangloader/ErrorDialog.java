@@ -43,6 +43,7 @@ public class ErrorDialog extends JDialog {
 			}
 		});
 		buttonPane.add(closeButton);
+		setVisible(true);
 
 	}
 
