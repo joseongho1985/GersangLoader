@@ -10,18 +10,8 @@ public class ClientListener implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-
-		switch (e.getActionCommand()) {
-		case "Client 1":
-			ClientPanel.lblNewLabel_2.setText(getDirectoryPath(0));
-			break;
-		case "Client 2":
-			ClientPanel.lblNewLabel_4.setText(getDirectoryPath(1));
-			break;
-		case "Client 3":
-			ClientPanel.lblNewLabel_5.setText(getDirectoryPath(2));
-			break;
-		}
+		int i = Integer.parseInt(e.getActionCommand())-1;
+		ClientPanel.pathList.get(i).setText(getDirectoryPath(i));
 	}
 
 	String getDirectoryPath(int i) {
