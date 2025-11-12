@@ -4,6 +4,7 @@ import java.awt.GridLayout;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 public class UseagePanel extends JPanel {
 
@@ -16,6 +17,7 @@ public class UseagePanel extends JPanel {
 		setLayout(new GridLayout(4, 1, 0, 0));
 		
 		JLabel lblNewLabel = new JLabel("사용방법");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("1. 설정 -> 클라이언트 에서 클라이언트를 선택한다.");

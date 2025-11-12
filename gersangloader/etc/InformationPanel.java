@@ -25,11 +25,11 @@ public class InformationPanel extends JPanel {
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lblNewLabel_2);
 
-		JLabel lblNewLabel_1 = new JLabel("Version 0.0.1");
+		JLabel lblNewLabel_1 = new JLabel("Version: 0.0.1");
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel = new JLabel("Apache 2.0 license");
+		JLabel lblNewLabel = new JLabel("license: Apache 2.0");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lblNewLabel);
 

@@ -48,18 +48,18 @@ public class MenuListener implements ActionListener {
 				dialog.setVisible(true);
 			}
 			break;
-		case "깃허브":
+		case "문의 게시판":
 			try {
-				Desktop.getDesktop().browse(new URI("https://github.com/joseongho1985/GersangStation"));
+				Desktop.getDesktop().browse(new URI("https://github.com/joseongho1985/GersangLoader/issues"));
 			} catch (IOException | URISyntaxException e1) {
 				// TODO Auto-generated catch block
 				ErrorDialog dialog = new ErrorDialog(e1.getMessage());
 				dialog.setVisible(true);
 			}
 			break;
-		case "패치노트":
+		case "패치 노트":
 			try {
-				Desktop.getDesktop().browse(new URI("https://github.com/joseongho1985/GersangStation/releases"));
+				Desktop.getDesktop().browse(new URI("https://github.com/joseongho1985/GersangLoader/releases"));
 			} catch (IOException | URISyntaxException e1) {
 				// TODO Auto-generated catch block
 				ErrorDialog dialog = new ErrorDialog(e1.getMessage());

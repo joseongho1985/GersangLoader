@@ -44,11 +44,11 @@ public class MenuPanel extends JPanel {
 		mntmNewMenuItem_1.addActionListener(new MenuListener());
 		mnNewMenu_1.add(mntmNewMenuItem_1);
 
-		JMenuItem mntmNewMenuItem_2 = new JMenuItem("깃허브");
+		JMenuItem mntmNewMenuItem_2 = new JMenuItem("문의 게시판");
 		mntmNewMenuItem_2.addActionListener(new MenuListener());
 		mnNewMenu_1.add(mntmNewMenuItem_2);
 
-		JMenuItem mntmNewMenuItem_5 = new JMenuItem("패치노트");
+		JMenuItem mntmNewMenuItem_5 = new JMenuItem("패치 노트");
 		mntmNewMenuItem_5.addActionListener(new MenuListener());
 		mnNewMenu_1.add(mntmNewMenuItem_5);
 
