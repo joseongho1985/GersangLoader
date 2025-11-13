@@ -4,11 +4,15 @@
 
 # 목차
 
-[주요기능](#주요기능)(Core Features)<br>
-[시작하기](#시작하기)(Getting Started)<br>
-[문서](#문서)(Documentation)<br>
-[적용기술](#적용기술)(Technical Stack)<br>
-[라이센스](#라이센스)(License)<br>
+[주요기능](#주요기능)(Core Features)
+
+[시작하기](#시작하기)(Getting Started)
+
+[문서](#문서)(Documentation)
+
+[적용기술](#적용기술)(Technical Stack)
+
+[라이센스](#라이센스)(License)
 
 # 주요기능
 
@@ -20,9 +24,11 @@
 
 ## 설치 및 실행 방법
 
-[자바](https://www.java.com/ko/download/)를 설치후 [거상로더](https://github.com/joseongho1985/GersangLoader/releases/download/0.0.1/GersangLoader.zip)를 실행하세요.
+1. [자바](https://www.java.com/ko/download/)를 설치해주세요.
 
-거상로더의 작동은 gersangloader.bat을 실행하거나, app.jar를 관리자 권한으로 실행합니다.
+2. [거상로더](https://github.com/joseongho1985/GersangLoader/releases/download/0.0.1/GersangLoader.zip)를 다운받아 압축해제 해주세요.
+
+3. gersangloader.bat을 실행하거나, app.jar를 관리자 권한으로 실행합니다.
 
 ## 다클라이언트 로그인 순서
 
