@@ -57,6 +57,15 @@ public class MenuListener implements ActionListener {
 				dialog.setVisible(true);
 			}
 			break;
+		case "거상로더 홈페이지":
+			try {
+				Desktop.getDesktop().browse(new URI("https://github.com/joseongho1985/GersangLoader"));
+			} catch (IOException | URISyntaxException e1) {
+				// TODO Auto-generated catch block
+				ErrorDialog dialog = new ErrorDialog(e1.getMessage());
+				dialog.setVisible(true);
+			}
+			break;
 		case "패치 노트":
 			try {
 				Desktop.getDesktop().browse(new URI("https://github.com/joseongho1985/GersangLoader/releases"));

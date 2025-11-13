@@ -19,17 +19,13 @@ public class InformationPanel extends JPanel {
 
 		JPanel panel = new JPanel();
 		add(panel, BorderLayout.CENTER);
-		panel.setLayout(new GridLayout(3, 1, 0, 0));
+		panel.setLayout(new GridLayout(2, 1, 0, 0));
 
-		JLabel lblNewLabel_2 = new JLabel("거상로더");
+		JLabel lblNewLabel_2 = new JLabel("거상로더 v 0.0.1");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lblNewLabel_2);
-
-		JLabel lblNewLabel_1 = new JLabel("Version: 0.0.1");
-		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		panel.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel = new JLabel("license: Apache 2.0");
+		JLabel lblNewLabel = new JLabel("license: selenium - Apache 2.0");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lblNewLabel);
 

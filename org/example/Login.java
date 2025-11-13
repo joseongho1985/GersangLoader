@@ -23,7 +23,7 @@ public class Login {
         inputPassword.sendKeys(password);
 
         WebElement submitButton = driver.findElement(By.id("btn_Login"));
-        submitButton.click();
+//        submitButton.click();
 
         // driver.quit();
     }

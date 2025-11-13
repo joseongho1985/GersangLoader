@@ -30,47 +30,53 @@ public class MenuPanel extends JPanel {
 		menuBar.add(mnNewMenu);
 
 		JMenuItem mntmNewMenuItem = new JMenuItem("로그인");
-		mntmNewMenuItem.addActionListener(new MenuListener());
 		mnNewMenu.add(mntmNewMenuItem);
 		
 		JMenuItem mntmNewMenuItem_6 = new JMenuItem("클라이언트");
-		mntmNewMenuItem_6.addActionListener(new MenuListener());
 		mnNewMenu.add(mntmNewMenuItem_6);
 
 		JMenu mnNewMenu_1 = new JMenu("외부링크");
 		menuBar.add(mnNewMenu_1);
 
 		JMenuItem mntmNewMenuItem_1 = new JMenuItem("거상 홈페이지");
-		mntmNewMenuItem_1.addActionListener(new MenuListener());
 		mnNewMenu_1.add(mntmNewMenuItem_1);
+		
+		JMenuItem mntmNewMenuItem_8 = new JMenuItem("거상로더 홈페이지");
+		mnNewMenu_1.add(mntmNewMenuItem_8);
+		mntmNewMenuItem_8.addActionListener(new MenuListener());
 
 		JMenuItem mntmNewMenuItem_2 = new JMenuItem("문의 게시판");
-		mntmNewMenuItem_2.addActionListener(new MenuListener());
 		mnNewMenu_1.add(mntmNewMenuItem_2);
 
 		JMenuItem mntmNewMenuItem_5 = new JMenuItem("패치 노트");
-		mntmNewMenuItem_5.addActionListener(new MenuListener());
 		mnNewMenu_1.add(mntmNewMenuItem_5);
 
 		JMenu mnNewMenu_2 = new JMenu("기타");
 		menuBar.add(mnNewMenu_2);
 		
 		JMenuItem mntmNewMenuItem_7 = new JMenuItem("사용방법");
-		mntmNewMenuItem_7.addActionListener(new MenuListener());
 		mnNewMenu_2.add(mntmNewMenuItem_7);
 
 		JMenuItem mntmNewMenuItem_3 = new JMenuItem("정보");
 		mnNewMenu_2.add(mntmNewMenuItem_3);
-		mntmNewMenuItem_3.addActionListener(new MenuListener());
 
 		JMenuItem mntmNewMenuItem_4 = new JMenuItem("후원");
 		mnNewMenu_2.add(mntmNewMenuItem_4);
-		mntmNewMenuItem_4.addActionListener(new MenuListener());
 
 		JLabel lblNewLabel_1 = new JLabel("최근 후원자: ");
 		add(lblNewLabel_1);
 		lblNewLabel = new JLabel();
 		add(lblNewLabel);
+		
+
+		mntmNewMenuItem.addActionListener(new MenuListener());
+		mntmNewMenuItem_6.addActionListener(new MenuListener());
+		mntmNewMenuItem_1.addActionListener(new MenuListener());
+		mntmNewMenuItem_2.addActionListener(new MenuListener());
+		mntmNewMenuItem_5.addActionListener(new MenuListener());
+		mntmNewMenuItem_7.addActionListener(new MenuListener());
+		mntmNewMenuItem_3.addActionListener(new MenuListener());
+		mntmNewMenuItem_4.addActionListener(new MenuListener());
 
 		Queue<String> donor = new LinkedList<String>();
 		donor.add("태극서버 나루상인");
