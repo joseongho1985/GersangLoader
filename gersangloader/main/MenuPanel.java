@@ -45,7 +45,7 @@ public class MenuPanel extends JPanel {
 		mnNewMenu_1.add(mntmNewMenuItem_8);
 		mntmNewMenuItem_8.addActionListener(new MenuListener());
 
-		JMenuItem mntmNewMenuItem_2 = new JMenuItem("문의 게시판");
+		JMenuItem mntmNewMenuItem_2 = new JMenuItem("이슈 게시판");
 		mnNewMenu_1.add(mntmNewMenuItem_2);
 
 		JMenuItem mntmNewMenuItem_5 = new JMenuItem("패치 노트");
