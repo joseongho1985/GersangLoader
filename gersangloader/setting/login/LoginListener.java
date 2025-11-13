@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 import javax.swing.JRadioButton;
 
-import org.example.Login;
+import org.example.GersangWeb;
 
 import gersangloader.ErrorDialog;
 
@@ -38,8 +38,9 @@ public class LoginListener implements ItemListener, ActionListener {
 			btn.getText();
 			int i = Integer.parseInt(btn.getText()) - 1;
 			ArrayList<String> account = getAccount(i);
-
-			new Login(account.get(0), account.get(1));
+			
+			new GersangWeb.logout();
+			new GersangWeb.login(account.get(0), account.get(1));
 		}
 	}
 
