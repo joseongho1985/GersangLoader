@@ -16,4 +16,4 @@
 
 3. 오른쪽 로그인 단추를 눌러 거상 홈페이지에 로그인 되는 것을 확인 후, 왼쪽 실행 버튼을 클릭한다.
 
->프로그램의 개선 및 버그 수정 요청은 [이슈게시판](https://github.com/joseongho1985/GersangLoader/issues)에 남겨주세요.
+[^1]프로그램의 개선 및 버그 수정 요청은 [이슈게시판](https://github.com/joseongho1985/GersangLoader/issues)에 남겨주세요.
