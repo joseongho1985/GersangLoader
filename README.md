@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html>
+# 거상로더
 
-<head>
+## 1. 실행방법
 
-</head>
+[자바](https://www.java.com/ko/download/)를 설치후 [거상로더](https://github.com/joseongho1985/GersangLoader/releases/download/0.0.1/GersangLoader.zip)를 실행하세요.
 
-<body>
-    <h1>거상로더</h1>
+거상로더는 app.jar 파일을 관리자 권한으로 실행하거나, gersangloader.bat을 실행합니다.
 
-    <h2> 설치방법</h2>
-
-    <p>프로그램을 실행하려면 <a href="https://www.java.com/ko/download/">자바</a>가 필요합니다.</p>
-
-    <p><a href="https://github.com/joseongho1985/GersangLoader/releases/download/0.0.1/GersangLoader.zip">거상로더</a> 다운로드</p>
-
-    <h2> 실행방법</h2>
-
-    <p>app.jar 파일을 관리자 권한으로 실행하거나,</p>
-
-    <p>gersangloader.bat을 실행합니다.</p>
-</body>
-
-</html>
+>프로그램의 개선 및 버그 수정 요청은 [이슈게시판](https://github.com/joseongho1985/GersangLoader/issues)에 남겨주세요.
