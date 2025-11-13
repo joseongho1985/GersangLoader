@@ -4,11 +4,11 @@
 
 # 목차
 
-[주요기능](#주요기능)(Core Features)
-[시작하기](#시작하기)(Getting Started)
-[문서](#문서)(Documentation)
-[적용기술](#적용기술)(Technical Stack)
-[라이센스](#라이센스)(License)
+[주요기능](#주요기능)(Core Features)<br>
+[시작하기](#시작하기)(Getting Started)<br>
+[문서](#문서)(Documentation)<br>
+[적용기술](#적용기술)(Technical Stack)<br>
+[라이센스](#라이센스)(License)<br>
 
 # 주요기능
 
