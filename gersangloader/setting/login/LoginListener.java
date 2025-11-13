@@ -15,6 +15,16 @@ import org.example.GersangWeb;
 import gersangloader.ErrorDialog;
 
 public class LoginListener implements ItemListener, ActionListener {
+	private LoginFile file;
+
+	LoginListener() {
+		try {
+			file = new LoginFile();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			new ErrorDialog(e.getMessage());
+		}
+	}
 
 	public ArrayList<String> getAccount(int i) {
 		String password = "";
@@ -38,9 +48,10 @@ public class LoginListener implements ItemListener, ActionListener {
 			btn.getText();
 			int i = Integer.parseInt(btn.getText()) - 1;
 			ArrayList<String> account = getAccount(i);
-			
-			new GersangWeb.logout();
-			new GersangWeb.login(account.get(0), account.get(1));
+
+			GersangWeb web = new GersangWeb();
+			web.logout();
+			web.login(account.get(0), account.get(1));
 		}
 	}
 
@@ -52,7 +63,7 @@ public class LoginListener implements ItemListener, ActionListener {
 
 		try {
 
-			String path = new LoginFile().getNthPath(i);
+			String path = file.getNthPath(i);
 			new ProcessBuilder(path + File.separator + "Run.exe").start();
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block

@@ -25,18 +25,18 @@ public class GersangWeb {
 		WebElement inputPassword = driver.findElement(By.id("GSuserPW"));
 		inputPassword.sendKeys(password);
 
-		WebElement submitButton = driver.findElement(By.id("btn_Login"));
-//	        submitButton.click();
+		WebElement loginButton = driver.findElement(By.id("btn_Login"));
+//	        loginButton.click();
 
 		// driver.quit();
 	}
 
 	public void logout() {
 
-		WebElement logoutButton = driver.findElement(By.id("btn_Login"));
+		WebElement logoutButton = driver.findElement(By.id("btn_Logout"));
 		logoutButton.click();
 
-		driver.quit();
+		// driver.quit();
 	}
 
 }

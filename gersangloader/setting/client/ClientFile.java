@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class ClientFile {
 
-	private static String[] pathList;
+	private String[] pathList;
 
 	public ClientFile() throws IOException {
 		super();

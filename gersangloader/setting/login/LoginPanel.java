@@ -17,11 +17,13 @@ public class LoginPanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 	protected static ArrayList<JTextField> idList;
 	protected static ArrayList<JPasswordField> passwordList;
+	private LoginListener listener;
 
 	/**
 	 * Create the panel.
 	 */
 	public LoginPanel() {
+		listener = new LoginListener();
 		idList = new ArrayList<JTextField>();
 		passwordList = new ArrayList<JPasswordField>();
 
@@ -72,15 +74,15 @@ public class LoginPanel extends JPanel {
 		panel_1.add(lblNewLabel_2);
 
 		JRadioButton rdbtnNewRadioButton = new JRadioButton("1");
-		rdbtnNewRadioButton.addItemListener(new LoginListener());
+		rdbtnNewRadioButton.addItemListener(listener);
 		panel_1.add(rdbtnNewRadioButton);
 
 		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("2");
-		rdbtnNewRadioButton_1.addItemListener(new LoginListener());
+		rdbtnNewRadioButton_1.addItemListener(listener);
 		panel_1.add(rdbtnNewRadioButton_1);
 
 		JRadioButton rdbtnNewRadioButton_2 = new JRadioButton("3");
-		rdbtnNewRadioButton_2.addItemListener(new LoginListener());
+		rdbtnNewRadioButton_2.addItemListener(listener);
 		panel_1.add(rdbtnNewRadioButton_2);
 
 		JPanel panel_2 = new JPanel();
@@ -92,15 +94,15 @@ public class LoginPanel extends JPanel {
 		panel_2.add(lblNewLabel_3);
 
 		JButton btnNewButton = new JButton("1");
-		btnNewButton.addActionListener(new LoginListener());
+		btnNewButton.addActionListener(listener);
 		panel_2.add(btnNewButton);
 
 		JButton btnNewButton_1 = new JButton("2");
-		btnNewButton_1.addActionListener(new LoginListener());
+		btnNewButton_1.addActionListener(listener);
 		panel_2.add(btnNewButton_1);
 
 		JButton btnNewButton_2 = new JButton("3");
-		btnNewButton_2.addActionListener(new LoginListener());
+		btnNewButton_2.addActionListener(listener);
 		panel_2.add(btnNewButton_2);
 
 		ButtonGroup group = new ButtonGroup();

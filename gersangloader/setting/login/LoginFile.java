@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class LoginFile {
 
-	private static String[] pathList;
+	private String[] pathList;
 
 	public LoginFile() throws IOException {
 		super();

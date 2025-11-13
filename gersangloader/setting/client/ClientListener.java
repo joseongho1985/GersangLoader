@@ -9,6 +9,16 @@ import javax.swing.JFileChooser;
 import gersangloader.ErrorDialog;
 
 public class ClientListener implements ActionListener {
+	private ClientFile file;
+
+	public ClientListener(){
+		try {
+			file = new ClientFile();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			new ErrorDialog(e.getMessage());
+		}
+	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -19,8 +29,8 @@ public class ClientListener implements ActionListener {
 		chooser.showOpenDialog(chooser);
 
 		try {
-			new ClientFile().setPath(chooser.getSelectedFile().getPath(), i);
-			ClientPanel.pathList.get(i).setText(new ClientFile().getNthPath(i));
+			file.setPath(chooser.getSelectedFile().getPath(), i);
+			ClientPanel.pathList.get(i).setText(file.getNthPath(i));
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			new ErrorDialog(e1.getMessage());
@@ -30,12 +40,7 @@ public class ClientListener implements ActionListener {
 	public String getNthPath(int i) {
 		// TODO Auto-generated method stub
 		String tmp ="클라이언트를 설정이 필요합니다.";
-		try {
-			tmp = new ClientFile().getNthPath(i);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			new ErrorDialog(e.getMessage());
-		}
+		tmp = file.getNthPath(i);
 		return tmp;
 	}
 }
