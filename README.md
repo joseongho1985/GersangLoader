@@ -26,7 +26,7 @@
 
 1. [자바](https://www.java.com/ko/download/)를 설치해주세요.
 
-2. [거상로더](https://github.com/joseongho1985/GersangLoader/releases/download/0.0.1/GersangLoader.zip)를 다운받아 압축해제 해주세요.
+2. [거상로더](https://github.com/joseongho1985/GersangLoader/releases)를 다운받아 압축해제 해주세요.
 
 3. gersangloader.bat을 실행하거나, app.jar를 관리자 권한으로 실행합니다.
 
